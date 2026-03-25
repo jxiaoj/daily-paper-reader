@@ -25,4 +25,48 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
-  intent_profiles: []
+  intent_profiles:
+    - tag: LLM SUM
+      description: 大语言模型优化学术论文总结相关研究
+      enabled: true
+      keywords:
+        - keyword: llm summary
+          keyword_cn: ''
+          query: l
+        - keyword: LLM summarization
+          keyword_cn: 大语言模型总结
+          query: Large language models for academic paper summarization
+        - keyword: academic paper
+          keyword_cn: 学术论文
+          query: scientific literature and scholarly articles
+        - keyword: optimization
+          keyword_cn: 优化
+          query: optimization techniques for text summarization
+        - keyword: prompt engineering
+          keyword_cn: 提示工程
+          query: prompt engineering for paper summarization
+        - keyword: fine-tuning
+          keyword_cn: 微调
+          query: fine-tuning LLMs for scientific summarization tasks
+      intent_queries:
+        - query: 帮我找llm优化学术论文总结相关
+          query_cn: 帮我找llm优化学术论文总结相关
+          enabled: true
+          source: manual
+          note: ''
+        - query: how to optimize LLM for academic paper summarization
+          query_cn: 如何优化大语言模型进行学术论文总结
+          enabled: true
+          source: manual
+          note: ''
+        - query: best practices for summarizing scientific papers using LLMs
+          query_cn: 使用大语言模型总结科学论文的最佳实践
+          enabled: true
+          source: manual
+          note: ''
+        - query: state of the art methods for automated scholarly summarization
+          query_cn: 自动化论文总结的最先进方法
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-03-25T06:25:43.464Z'
